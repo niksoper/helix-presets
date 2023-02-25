@@ -6,7 +6,7 @@
    "application" : "HX Edit",
    "appversion" : 55705600,
    "build_sha" : "v3.15-207-g09aad57",
-   "modifieddate" : 1677316118,
+   "modifieddate" : 1677318290,
    "name" : "SimpleBoy"
   },
   "tone" : {
@@ -40,10 +40,24 @@
     },
     "block2" : {
      "@enabled" : true,
-     "@model" : "HD2_DistObsidian7000",
+     "@model" : "HD2_CompressorKinkyComp",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
      "@position" : 3,
+     "@stereo" : false,
+     "@type" : 0,
+     "Attack" : 0.380,
+     "Level" : 0.50,
+     "Mix" : 1.0,
+     "Release" : 1.0,
+     "Sensitivity" : 0.470
+    },
+    "block3" : {
+     "@enabled" : true,
+     "@model" : "HD2_DistObsidian7000",
+     "@no_snapshot_bypass" : false,
+     "@path" : 0,
+     "@position" : 4,
      "@stereo" : false,
      "@type" : 0,
      "Attack" : 2,
@@ -58,16 +72,16 @@
      "LoMid" : -5.0,
      "LoMidFreq" : 0,
      "Master" : 0.550,
-     "Treble" : 5.74620
+     "Treble" : 1.50
     },
-    "block3" : {
+    "block4" : {
      "@bypassvolume" : 1.0,
      "@cab" : "cab0",
      "@enabled" : true,
      "@model" : "HD2_AmpGCougar800",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 4,
+     "@position" : 5,
      "@type" : 3,
      "Bass" : 0.50,
      "Boost" : 0.470,
@@ -79,7 +93,7 @@
      "Master" : 1.0,
      "Treble" : 0.660
     },
-    "block4" : {
+    "block5" : {
      "@enabled" : true,
      "@model" : "HD2_CompressorDeluxeComp",
      "@no_snapshot_bypass" : false,
@@ -89,9 +103,9 @@
      "@type" : 0,
      "Attack" : 0.0150,
      "Knee" : 6.0,
-     "Level" : 7.80,
+     "Level" : 5.39999,
      "Mix" : 1.0,
-     "Ratio" : 4,
+     "Ratio" : 3,
      "Release" : 0.170,
      "Threshold" : -24.40
     },
@@ -163,9 +177,9 @@
     "@PowercabVoicing" : 0,
     "@current_snapshot" : 0,
     "@cursor_dsp" : 0,
-    "@cursor_group" : "block2",
-    "@cursor_path" : 0,
-    "@cursor_position" : 3,
+    "@cursor_group" : "block5",
+    "@cursor_path" : 1,
+    "@cursor_position" : 0,
     "@guitarinputZ" : 0,
     "@guitarpad" : 0,
     "@model" : "@global_params",
@@ -188,6 +202,7 @@
       "block2" : true,
       "block3" : true,
       "block4" : true,
+      "block5" : true,
       "split" : true
      }
     }
@@ -206,6 +221,7 @@
       "block2" : true,
       "block3" : true,
       "block4" : true,
+      "block5" : true,
       "split" : true
      }
     }
@@ -224,6 +240,7 @@
       "block2" : true,
       "block3" : true,
       "block4" : true,
+      "block5" : true,
       "split" : true
      }
     }
