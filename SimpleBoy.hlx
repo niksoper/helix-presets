@@ -6,7 +6,7 @@
    "application" : "HX Edit",
    "appversion" : 55705600,
    "build_sha" : "v3.15-207-g09aad57",
-   "modifieddate" : 1677318290,
+   "modifieddate" : 1677318840,
    "name" : "SimpleBoy"
   },
   "tone" : {
@@ -95,6 +95,18 @@
     },
     "block5" : {
      "@enabled" : true,
+     "@model" : "HD2_GateNoiseGate",
+     "@no_snapshot_bypass" : false,
+     "@path" : 0,
+     "@position" : 6,
+     "@stereo" : false,
+     "@type" : 0,
+     "Decay" : 0.50,
+     "Level" : 0.0,
+     "Threshold" : -21.70
+    },
+    "block6" : {
+     "@enabled" : true,
      "@model" : "HD2_CompressorDeluxeComp",
      "@no_snapshot_bypass" : false,
      "@path" : 1,
@@ -138,7 +150,7 @@
      "@enabled" : true,
      "@model" : "HD2_AppDSPFlowJoin",
      "@no_snapshot_bypass" : false,
-     "@position" : 8,
+     "@position" : 7,
      "A Level" : 0.0,
      "A Pan" : 0.50,
      "B Level" : 0.0,
@@ -178,8 +190,8 @@
     "@current_snapshot" : 0,
     "@cursor_dsp" : 0,
     "@cursor_group" : "block5",
-    "@cursor_path" : 1,
-    "@cursor_position" : 0,
+    "@cursor_path" : 0,
+    "@cursor_position" : 6,
     "@guitarinputZ" : 0,
     "@guitarpad" : 0,
     "@model" : "@global_params",
@@ -203,6 +215,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
+      "block6" : true,
       "split" : true
      }
     }
@@ -222,6 +235,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
+      "block6" : true,
       "split" : true
      }
     }
@@ -241,6 +255,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
+      "block6" : true,
       "split" : true
      }
     }
