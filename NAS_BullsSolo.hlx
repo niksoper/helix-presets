@@ -7,77 +7,84 @@
    "appversion" : 55705600,
    "build_sha" : "v3.15-207-g09aad57",
    "modifieddate" : 1677929883,
-   "name" : "NAS:Bulls"
+   "name" : "NAS:BullsSolo"
   },
   "tone" : {
    "dsp0" : {
     "block0" : {
      "@enabled" : true,
-     "@model" : "L6SPB_PolyDowntune",
+     "@model" : "HD2_CompressorAutoSwell",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
      "@position" : 0,
+     "@stereo" : false,
      "@type" : 0,
-     "AutoEQ" : 0.70,
-     "Interval" : -1,
+     "Attack" : 0.1280,
+     "Decay" : 0.0500001,
      "Level" : 0.0,
-     "Mix" : 1.0,
-     "Tracking" : 3
+     "Rel Offset" : 5.0,
+     "Taper" : true,
+     "Threshold" : -70.0
     },
     "block1" : {
-     "@enabled" : false,
+     "@enabled" : true,
      "@model" : "HD2_DistHedgehogD9",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 2,
+     "@position" : 1,
      "@stereo" : false,
      "@type" : 0,
-     "Gain" : 0.140,
+     "Gain" : 0.470,
      "Level" : 0.680,
      "Tone" : 0.240
     },
     "block2" : {
      "@enabled" : true,
-     "@model" : "HD2_DistZeroAmpBassDI",
+     "@model" : "HD2_FilterAutoFilter",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 4,
+     "@position" : 2,
      "@stereo" : false,
      "@type" : 0,
-     "Bass" : 0.590,
-     "Blend" : 0.40,
-     "Drive" : 0.680,
-     "Level" : 0.480,
-     "Presence" : 0.50,
-     "Treble" : 0.30
+     "Attack" : 0.020,
+     "Decay" : 0.350,
+     "Direction" : true,
+     "FilterGain" : 18.0,
+     "FilterQ" : 7.50,
+     "FreqDepth" : 3500.0,
+     "Frequency" : 50.0,
+     "Level" : 0.0,
+     "Mix" : 1.0,
+     "Mode" : 2,
+     "Sens" : 0.40
     },
     "block3" : {
      "@bypassvolume" : 1.0,
      "@enabled" : true,
-     "@model" : "HD2_AmpTucknGo",
+     "@model" : "HD2_AmpCaliRectifire",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 5,
+     "@position" : 3,
      "@type" : 1,
-     "Bass" : 0.650,
-     "Bias" : 0.660,
-     "BiasX" : 0.50,
-     "ChVol" : 1.0,
-     "Drive" : 0.450,
-     "HighMid" : 0.50,
-     "Hum" : 0.50,
-     "LowMid" : 0.50,
-     "Master" : 1.0,
+     "Bass" : 0.260,
+     "Bias" : 0.20,
+     "BiasX" : 0.480,
+     "ChVol" : 0.670,
+     "Drive" : 0.680,
+     "Hum" : 0.270,
+     "Master" : 0.330,
+     "Mid" : 0.590,
+     "Presence" : 0.20,
      "Ripple" : 0.50,
      "Sag" : 0.50,
-     "Treble" : 0.70
+     "Treble" : 0.380
     },
     "block4" : {
      "@enabled" : true,
      "@model" : "HD2_CabMicIr_4x12UberV30",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 6,
+     "@position" : 4,
      "@type" : 2,
      "Angle" : 0.0,
      "Distance" : 1.0,
@@ -89,35 +96,27 @@
     },
     "block5" : {
      "@enabled" : true,
-     "@model" : "HD2_CompressorDeluxeComp",
+     "@model" : "HD2_EQLowCutHighCut",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 7,
+     "@position" : 5,
      "@stereo" : false,
      "@type" : 0,
-     "Attack" : 0.0380,
-     "Knee" : 6.0,
-     "Level" : 7.0,
-     "Mix" : 1.0,
-     "Ratio" : 2,
-     "Release" : 0.20,
-     "Threshold" : -37.10
+     "HighCut" : 20100.0,
+     "Level" : 0.0,
+     "LowCut" : 205.0
     },
     "block6" : {
-     "@enabled" : true,
-     "@model" : "HD2_CompressorDeluxeComp",
+     "@enabled" : false,
+     "@model" : "HD2_GateNoiseGate",
      "@no_snapshot_bypass" : false,
-     "@path" : 1,
-     "@position" : 3,
+     "@path" : 0,
+     "@position" : 6,
      "@stereo" : false,
      "@type" : 0,
-     "Attack" : 0.0380,
-     "Knee" : 6.0,
-     "Level" : 16.10,
-     "Mix" : 1.0,
-     "Ratio" : 4,
-     "Release" : 0.20,
-     "Threshold" : -37.10
+     "Decay" : 0.50,
+     "Level" : 0.0,
+     "Threshold" : -51.80
     },
     "inputA" : {
      "@input" : 1,
@@ -162,7 +161,7 @@
      "@enabled" : true,
      "@model" : "HD2_AppDSPFlowSplitXOver",
      "@no_snapshot_bypass" : false,
-     "@position" : 2,
+     "@position" : 0,
      "Frequency" : 320.0,
      "Reverse" : false,
      "bypass" : false
@@ -172,10 +171,10 @@
    "footswitch" : {
     "dsp0" : {
      "block1" : {
-      "@fs_enabled" : false,
+      "@fs_enabled" : true,
       "@fs_index" : 1,
       "@fs_label" : "Hedgehog D9",
-      "@fs_ledcolor" : 525824,
+      "@fs_ledcolor" : 13676288,
       "@fs_momentary" : false,
       "@fs_primary" : true
      }
@@ -188,15 +187,15 @@
     "@PowercabVoicing" : 0,
     "@current_snapshot" : 0,
     "@cursor_dsp" : 0,
-    "@cursor_group" : "block3",
+    "@cursor_group" : "block0",
     "@cursor_path" : 0,
-    "@cursor_position" : 5,
+    "@cursor_position" : 0,
     "@guitarinputZ" : 0,
     "@guitarpad" : 0,
     "@model" : "@global_params",
     "@pedalstate" : 2,
     "@tempo" : 120.0,
-    "@topology0" : "SABJ",
+    "@topology0" : "A",
     "@topology1" : 0
    },
    "snapshot0" : {
@@ -209,13 +208,12 @@
     "blocks" : {
      "dsp0" : {
       "block0" : true,
-      "block1" : false,
+      "block1" : true,
       "block2" : true,
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : true,
-      "split" : true
+      "block6" : false
      }
     }
    },
@@ -234,8 +232,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : true,
-      "split" : true
+      "block6" : true
      }
     }
    },
@@ -254,8 +251,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : true,
-      "split" : true
+      "block6" : true
      }
     }
    },

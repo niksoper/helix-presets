@@ -7,7 +7,7 @@
    "appversion" : 55705600,
    "build_sha" : "v3.15-207-g09aad57",
    "modifieddate" : 1677929883,
-   "name" : "NAS:Bulls"
+   "name" : "NAS:BullsGain"
   },
   "tone" : {
    "dsp0" : {
@@ -25,7 +25,7 @@
      "Tracking" : 3
     },
     "block1" : {
-     "@enabled" : false,
+     "@enabled" : true,
      "@model" : "HD2_DistHedgehogD9",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
@@ -172,10 +172,10 @@
    "footswitch" : {
     "dsp0" : {
      "block1" : {
-      "@fs_enabled" : false,
+      "@fs_enabled" : true,
       "@fs_index" : 1,
       "@fs_label" : "Hedgehog D9",
-      "@fs_ledcolor" : 525824,
+      "@fs_ledcolor" : 13676288,
       "@fs_momentary" : false,
       "@fs_primary" : true
      }
@@ -186,7 +186,7 @@
     "@PowercabMode" : 0,
     "@PowercabSelect" : 2,
     "@PowercabVoicing" : 0,
-    "@current_snapshot" : 0,
+    "@current_snapshot" : 1,
     "@cursor_dsp" : 0,
     "@cursor_group" : "block3",
     "@cursor_path" : 0,
