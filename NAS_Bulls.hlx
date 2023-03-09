@@ -4,7 +4,7 @@
       "name" : "NAS:Bulls",
       "application" : "HX Edit",
       "build_sha" : "v3.15-207-g09aad57",
-      "modifieddate" : 1678036984,
+      "modifieddate" : 1678403052,
       "appversion" : 55640064
     },
     "device" : 2162694,
@@ -20,12 +20,12 @@
         "@PowercabMode" : 0,
         "@guitarpad" : 0,
         "@pedalstate" : 2,
-        "@cursor_group" : "block3",
+        "@cursor_group" : "block6",
         "@DtSelect" : 2,
-        "@cursor_path" : 0,
+        "@cursor_path" : 1,
         "@current_snapshot" : 0,
         "@tempo" : 120,
-        "@cursor_position" : 5,
+        "@cursor_position" : 3,
         "@topology1" : 0,
         "@PowercabSelect" : 2,
         "@guitarinputZ" : 0
@@ -53,22 +53,16 @@
       "variax" : {
         "@variax_model" : 0,
         "@variax_str4tuning" : 0,
-        "@variax_str1level" : 1,
-        "@variax_str5level" : 1,
         "@variax_str1tuning" : 0,
         "@variax_lockctrls" : 0,
         "@variax_str2tuning" : 0,
         "@variax_customtuning" : true,
         "@variax_magmode" : true,
-        "@variax_str2level" : 1,
         "@variax_str5tuning" : 0,
-        "@variax_str6level" : 1,
         "@variax_toneknob" : -0.10000002384185791,
-        "@variax_str3level" : 1,
         "@variax_str3tuning" : 0,
         "@variax_str6tuning" : 0,
-        "@variax_volumeknob" : -0.10000002384185791,
-        "@variax_str4level" : 1
+        "@variax_volumeknob" : -0.10000002384185791
       },
       "footswitch" : {
         "dsp0" : {
@@ -197,7 +191,7 @@
           "Attack" : 0.037999987602233887,
           "Mix" : 1,
           "Ratio" : 4,
-          "Level" : 16.100000381469727,
+          "Level" : 11.502396583557129,
           "@stereo" : false
         },
         "block0" : {
