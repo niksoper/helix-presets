@@ -18,10 +18,10 @@
           "@path": 0,
           "@position": 0,
           "@type": 0,
-          "AutoEQ": 0.70,
+          "AutoEQ": 0.7,
           "Interval": -1,
-          "Level": 0.0,
-          "Mix": 1.0,
+          "Level": 0,
+          "Mix": 1,
           "Tracking": 3
         },
         "block1": {
@@ -32,9 +32,9 @@
           "@position": 2,
           "@stereo": false,
           "@type": 0,
-          "Gain": 0.140,
-          "Level": 0.680,
-          "Tone": 0.240
+          "Gain": 0.14,
+          "Level": 0.68,
+          "Tone": 0.24
         },
         "block2": {
           "@enabled": true,
@@ -44,33 +44,33 @@
           "@position": 4,
           "@stereo": false,
           "@type": 0,
-          "Bass": 0.590,
-          "Blend": 0.40,
-          "Drive": 0.680,
-          "Level": 0.480,
-          "Presence": 0.50,
-          "Treble": 0.30
+          "Bass": 0.59,
+          "Blend": 0.4,
+          "Drive": 0.68,
+          "Level": 0.48,
+          "Presence": 0.5,
+          "Treble": 0.3
         },
         "block3": {
-          "@bypassvolume": 1.0,
+          "@bypassvolume": 1,
           "@enabled": true,
           "@model": "HD2_AmpTucknGo",
           "@no_snapshot_bypass": false,
           "@path": 0,
           "@position": 5,
           "@type": 1,
-          "Bass": 0.650,
-          "Bias": 0.660,
-          "BiasX": 0.50,
-          "ChVol": 1.0,
-          "Drive": 0.450,
-          "HighMid": 0.50,
-          "Hum": 0.50,
-          "LowMid": 0.50,
-          "Master": 1.0,
-          "Ripple": 0.50,
-          "Sag": 0.50,
-          "Treble": 0.70
+          "Bass": 0.65,
+          "Bias": 0.66,
+          "BiasX": 0.5,
+          "ChVol": 1,
+          "Drive": 0.45,
+          "HighMid": 0.5,
+          "Hum": 0.5,
+          "LowMid": 0.5,
+          "Master": 1,
+          "Ripple": 0.5,
+          "Sag": 0.5,
+          "Treble": 0.7
         },
         "block4": {
           "@enabled": true,
@@ -79,13 +79,13 @@
           "@path": 0,
           "@position": 6,
           "@type": 2,
-          "Angle": 0.0,
-          "Distance": 1.0,
-          "HighCut": 12000.0,
-          "Level": 0.0,
-          "LowCut": 19.90,
+          "Angle": 0,
+          "Distance": 1,
+          "HighCut": 12000,
+          "Level": 0,
+          "LowCut": 19.9,
           "Mic": 10,
-          "Position": 0.270
+          "Position": 0.27
         },
         "block5": {
           "@enabled": true,
@@ -95,13 +95,13 @@
           "@position": 7,
           "@stereo": false,
           "@type": 0,
-          "Attack": 0.0380,
-          "Knee": 6.0,
-          "Level": 7.0,
-          "Mix": 1.0,
+          "Attack": 0.038,
+          "Knee": 6,
+          "Level": 7,
+          "Mix": 1,
           "Ratio": 2,
-          "Release": 0.20,
-          "Threshold": -37.10
+          "Release": 0.2,
+          "Threshold": -37.1
         },
         "block6": {
           "@enabled": true,
@@ -111,61 +111,61 @@
           "@position": 3,
           "@stereo": false,
           "@type": 0,
-          "Attack": 0.0380,
-          "Knee": 6.0,
+          "Attack": 0.038,
+          "Knee": 6,
           "Level": 11.5024,
-          "Mix": 1.0,
+          "Mix": 1,
           "Ratio": 4,
-          "Release": 0.20,
-          "Threshold": -37.10
+          "Release": 0.2,
+          "Threshold": -37.1
         },
         "inputA": {
           "@input": 1,
           "@model": "HelixStomp_AppDSPFlowInput",
-          "decay": 0.50,
+          "decay": 0.5,
           "noiseGate": false,
-          "threshold": -48.0
+          "threshold": -48
         },
         "inputB": {
           "@input": 0,
           "@model": "HelixStomp_AppDSPFlowInput",
-          "decay": 0.50,
+          "decay": 0.5,
           "noiseGate": false,
-          "threshold": -48.0
+          "threshold": -48
         },
         "join": {
           "@enabled": true,
           "@model": "HD2_AppDSPFlowJoin",
           "@no_snapshot_bypass": false,
           "@position": 8,
-          "A Level": 0.0,
-          "A Pan": 0.50,
-          "B Level": 0.0,
-          "B Pan": 0.50,
+          "A Level": 0,
+          "A Pan": 0.5,
+          "B Level": 0,
+          "B Pan": 0.5,
           "B Polarity": false,
-          "Level": 0.0
+          "Level": 0
         },
         "outputA": {
           "@model": "HelixStomp_AppDSPFlowOutputMain",
           "@output": 1,
-          "gain": 0.0,
-          "pan": 0.50
+          "gain": 0,
+          "pan": 0.5
         },
         "outputB": {
           "@model": "HelixStomp_AppDSPFlowOutputSend",
           "@output": 0,
-          "Type": true,
-          "gain": 0.0,
-          "pan": 0.50
+          "gain": 0,
+          "pan": 0.5,
+          "Type": true
         },
         "split": {
           "@enabled": true,
           "@model": "HD2_AppDSPFlowSplitXOver",
           "@no_snapshot_bypass": false,
           "@position": 2,
-          "Frequency": 320.0,
-          "Reverse": false,
-          "bypass": false
+          "bypass": false,
+          "Frequency": 320,
+          "Reverse": false
         }
       },
       "dsp1": {},
@@ -182,20 +182,20 @@
         }
       },
       "global": {
-        "@DtSelect": 2,
-        "@PowercabMode": 0,
-        "@PowercabSelect": 2,
-        "@PowercabVoicing": 0,
         "@current_snapshot": 0,
         "@cursor_dsp": 0,
         "@cursor_group": "block6",
         "@cursor_path": 1,
         "@cursor_position": 3,
+        "@DtSelect": 2,
         "@guitarinputZ": 0,
         "@guitarpad": 0,
         "@model": "@global_params",
         "@pedalstate": 2,
-        "@tempo": 120.0,
+        "@PowercabMode": 0,
+        "@PowercabSelect": 2,
+        "@PowercabVoicing": 0,
+        "@tempo": 120,
         "@topology0": "SABJ",
         "@topology1": 0
       },
@@ -204,7 +204,7 @@
         "@ledcolor": 0,
         "@name": "SNAPSHOT 1",
         "@pedalstate": 0,
-        "@tempo": 120.0,
+        "@tempo": 120,
         "@valid": true,
         "blocks": {
           "dsp0": {
@@ -224,7 +224,7 @@
         "@ledcolor": 0,
         "@name": "SNAPSHOT 2",
         "@pedalstate": 0,
-        "@tempo": 120.0,
+        "@tempo": 120,
         "@valid": true,
         "blocks": {
           "dsp0": {
@@ -244,7 +244,7 @@
         "@ledcolor": 0,
         "@name": "SNAPSHOT 3",
         "@pedalstate": 0,
-        "@tempo": 120.0,
+        "@tempo": 120,
         "@valid": true,
         "blocks": {
           "dsp0": {
@@ -270,8 +270,8 @@
         "@variax_str4tuning": 0,
         "@variax_str5tuning": 0,
         "@variax_str6tuning": 0,
-        "@variax_toneknob": -0.10,
-        "@variax_volumeknob": -0.10
+        "@variax_toneknob": -0.1,
+        "@variax_volumeknob": -0.1
       }
     }
   },
