@@ -13,19 +13,25 @@ const get = async p => {
   return result.trim();
 }
 
-// Get array of all staged *.hlx files
-const stagedRaw = await get($`git diff-index --cached --name-only HEAD -- *.hlx`);
-const staged = stagedRaw.split('\n').filter(file => file.length > 0);
+const listAllPresets = () => glob('**/*.hlx');
+
+/**Gets an array of all staged *.hlx files */
+const listStagedPresets = async () => {
+  const stagedRaw = await get($`git diff-index --cached --name-only HEAD -- *.hlx`);
+  return stagedRaw.split('\n').filter(file => file.length > 0);
+}
+
+const staged = await listStagedPresets();
 
 // Format them
 if (staged.length > 0) {
   console.log(`Formatting ${staged.length} helix presets:`,  staged);
   
   const options = { ignoreCase: true, depth: 5};
-  for (const preset of staged) {
-    const absPath = repoPath(preset);
+  for (const relPath of staged) {
+    const absPath = repoPath(relPath);
     console.log(`Formatting and re-staging ${absPath}...`);
     sortJson.overwrite(absPath, options);
-    await $`git add ${preset}`.quiet();
+    await $`git add ${relPath}`.quiet();
   }
 }
