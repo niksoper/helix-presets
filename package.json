@@ -4,7 +4,9 @@
   "description": "Presets for helix pedals and native plugins 😎",
   "main": "index.js",
   "scripts": {
-    "format-staged-presets": "zx ./_scripts/format-staged-presets.mjs",
+    "format-presets": "zx ./_scripts/format-presets.mjs",
+    "format-all-presets": "npm run format-presets -- all",
+    "format-staged-presets": "npm run format-presets -- staged",
     "prepare": "husky install"
   },
   "repository": {
