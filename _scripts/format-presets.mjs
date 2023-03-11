@@ -3,26 +3,24 @@
 const sortJson = require('sort-json');
 
 // Use the first CLI argument as the strategy
-const strategy = argv._[0];
+const [strategy, targetPreset] = argv._;
 if (!strategy) {
   throw new Error('A strategy must be given');
-}
-
-const listAllPresets = () => glob('**/*.hlx');
-
-/**Gets an array of all staged *.hlx files */
-const listStagedPresets = async () => {
-  const stagedRaw = await get($`git diff-index --cached --name-only HEAD -- *.hlx`);
-  return stagedRaw.split('\n').filter(file => file.length > 0);
 }
 
 let listPresetFiles;
 switch (strategy) {
   case 'staged':
-    listPresetFiles = listStagedPresets;
+    listPresetFiles =  async () => {
+      const stagedRaw = await get($`git diff-index --cached --name-only HEAD -- *.hlx`);
+      return stagedRaw.split('\n').filter(file => file.length > 0);
+    };
     break;
   case 'all':
-    listPresetFiles = listAllPresets;
+    listPresetFiles = () => glob('**/*.hlx');;
+    break;
+  case 'single':
+    listPresetFiles = () => [targetPreset];
     break;
   default:
     throw new Error(`Unexpected strategy: '${strategy}'`);
@@ -46,11 +44,14 @@ const staged = await listPresetFiles();
 if (staged.length > 0) {
   console.log(`Formatting ${staged.length} helix presets:`,  staged);
   
-  const options = { ignoreCase: true, depth: 5};
+  const options = { ignoreCase: true, spaces: 2, depth: 5};
   for (const relPath of staged) {
     const absPath = repoPath(relPath);
-    console.log(`Formatting and re-staging ${absPath}...`);
+    console.log(`Formatting ${absPath}...`);
     sortJson.overwrite(absPath, options);
-    await $`git add ${relPath}`.quiet();
+
+    if (strategy === 'staged') {
+      await $`git add ${relPath}`.quiet();
+    }
   }
 }

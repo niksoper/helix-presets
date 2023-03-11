@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format-presets": "zx ./_scripts/format-presets.mjs",
+    "format-preset": "npm run format-presets -- single",
     "format-all-presets": "npm run format-presets -- all",
     "format-staged-presets": "npm run format-presets -- staged",
     "prepare": "husky install"
