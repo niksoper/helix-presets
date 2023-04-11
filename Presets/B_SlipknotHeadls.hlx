@@ -6,7 +6,7 @@
       "application": "HX Edit",
       "appversion": 55640064,
       "build_sha": "v3.15-207-g09aad57",
-      "modifieddate": 1681233729,
+      "modifieddate": 1681236489,
       "name": "B:SlipknotHeadls"
     },
     "tone": {
@@ -26,7 +26,6 @@
         },
         "block1": {
           "@enabled": true,
-          "@favorite": 53,
           "@model": "HD2_Compressor3BandComp",
           "@no_snapshot_bypass": false,
           "@path": 0,
@@ -69,17 +68,15 @@
         },
         "block3": {
           "@enabled": true,
-          "@model": "HD2_DistTeemah",
+          "@model": "HD2_DistHedgehogD9",
           "@no_snapshot_bypass": false,
           "@path": 1,
           "@position": 2,
           "@stereo": false,
           "@type": 0,
-          "Bass": 0.5,
-          "Clipping": 0,
-          "Gain": 0.6499999761581421,
-          "Level": 0.6299999952316284,
-          "Treble": 0.5
+          "Gain": 0.7000000476837158,
+          "Level": 0.6800000667572021,
+          "Tone": 0.26999998092651367
         },
         "block4": {
           "@bypassvolume": 1,
@@ -163,9 +160,9 @@
       "global": {
         "@current_snapshot": 0,
         "@cursor_dsp": 0,
-        "@cursor_group": "block1",
-        "@cursor_path": 0,
-        "@cursor_position": 1,
+        "@cursor_group": "block3",
+        "@cursor_path": 1,
+        "@cursor_position": 2,
         "@DtSelect": 2,
         "@guitarinputZ": 0,
         "@guitarpad": 0,
