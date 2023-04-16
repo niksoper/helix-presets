@@ -6,7 +6,7 @@
       "application": "HX Edit",
       "appversion": 55640064,
       "build_sha": "v3.15-207-g09aad57",
-      "modifieddate": 1681549232,
+      "modifieddate": 1681632703,
       "name": "NAS:46&2"
     },
     "tone": {
@@ -52,7 +52,7 @@
           "Drive": 0.5499999523162842
         },
         "block2": {
-          "@enabled": false,
+          "@enabled": true,
           "@model": "HD2_FlangerGrayFlanger",
           "@no_snapshot_bypass": false,
           "@path": 0,
@@ -103,7 +103,7 @@
           "LowCut": 20
         },
         "block5": {
-          "@enabled": true,
+          "@enabled": false,
           "@model": "HD2_EQGraphic10Band",
           "@no_snapshot_bypass": false,
           "@path": 0,
@@ -203,11 +203,20 @@
         "dsp0": {
           "block2": {
             "@fs_label": "Gray Flanger",
-            "@fs_enabled": false,
+            "@fs_enabled": true,
             "@fs_index": 2,
-            "@fs_ledcolor": 1037,
-            "@fs_primary": true,
+            "@fs_customlabel": "Flanger",
+            "@fs_ledcolor": 13055,
             "@fs_momentary": false
+          },
+          "block5": {
+            "@fs_momentary": false,
+            "@fs_primary": true,
+            "@fs_index": 2,
+            "@fs_enabled": false,
+            "@fs_ledcolor": 527360,
+            "@fs_customlabel": "Flanger",
+            "@fs_label": "10 Band Graphic"
           },
           "block6": {
             "@fs_label": "Volume Pedal",
@@ -248,10 +257,10 @@
           "dsp0": {
             "block0": true,
             "block1": true,
-            "block2": false,
+            "block2": true,
             "block3": true,
             "block4": true,
-            "block5": true,
+            "block5": false,
             "block6": true,
             "block7": true,
             "split": true
