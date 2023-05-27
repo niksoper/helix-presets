@@ -6,7 +6,7 @@
       "application": "HX Edit",
       "appversion": 56623104,
       "build_sha": "v3.50-25-g9dead52",
-      "modifieddate": 1684828656,
+      "modifieddate": 1685177230,
       "name": "G:Rhino"
     },
     "tone": {
@@ -38,20 +38,20 @@
         },
         "block1": {
           "@enabled": false,
-          "@model": "HD2_WahChromeCustom",
+          "@model": "HD2_WahThroaty",
           "@no_snapshot_bypass": false,
           "@path": 0,
           "@position": 1,
           "@stereo": false,
           "@type": 0,
-          "FcHigh": 1975,
-          "FcLow": 300,
+          "FcHigh": 1735,
+          "FcLow": 310,
           "Level": 0,
           "Mix": 1,
-          "Pedal": 0.008449554443359375
+          "Pedal": 0.9392712116241455
         },
         "block2": {
-          "@enabled": false,
+          "@enabled": true,
           "@model": "HD2_DistVerminDist",
           "@no_snapshot_bypass": false,
           "@path": 0,
@@ -148,7 +148,7 @@
       "footswitch": {
         "dsp0": {
           "block1": {
-            "@fs_label": "Chrome Custom",
+            "@fs_label": "Throaty",
             "@fs_enabled": false,
             "@fs_index": 1,
             "@fs_ledcolor": 196619,
@@ -157,9 +157,9 @@
           },
           "block2": {
             "@fs_label": "Vermin Dist",
-            "@fs_enabled": false,
+            "@fs_enabled": true,
             "@fs_index": 2,
-            "@fs_ledcolor": 525824,
+            "@fs_ledcolor": 13676288,
             "@fs_primary": true,
             "@fs_momentary": false
           }
@@ -168,9 +168,9 @@
       "global": {
         "@current_snapshot": 0,
         "@cursor_dsp": 0,
-        "@cursor_group": "block2",
+        "@cursor_group": "block1",
         "@cursor_path": 0,
-        "@cursor_position": 2,
+        "@cursor_position": 1,
         "@DtSelect": 2,
         "@guitarinputZ": 0,
         "@guitarpad": 0,
@@ -194,7 +194,7 @@
           "dsp0": {
             "block0": true,
             "block1": false,
-            "block2": false,
+            "block2": true,
             "block3": true
           }
         },
@@ -203,7 +203,7 @@
             "block1": {
               "Pedal": {
                 "@fs_enabled": false,
-                "@value": 0.008449554443359375
+                "@value": 0.9392712116241455
               }
             }
           }
