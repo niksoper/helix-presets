@@ -1,18 +1,18 @@
 {
  "data": {
   "device": 2162694,
-  "device_version": 55574528,
+  "device_version": 56623104,
   "meta": {
    "application": "HX Edit",
-   "appversion": 55705600,
-   "build_sha": "v3.15-207-g09aad57",
-   "modifieddate": 1679390475,
+   "appversion": 56623104,
+   "build_sha": "v3.50-25-g9dead52",
+   "modifieddate": 1688296536,
    "name": "NAS:BathTub"
   },
   "tone": {
    "controller": {
     "dsp0": {
-     "block1": {
+     "block2": {
       "Bright": {
        "@controller": 3,
        "@fs_customlabel": "AutoFilter",
@@ -29,12 +29,25 @@
    },
    "dsp0": {
     "block0": {
+     "@enabled": false,
+     "@model": "L6SPB_PolyDowntune",
+     "@no_snapshot_bypass": false,
+     "@path": 0,
+     "@position": 0,
+     "@type": 0,
+     "AutoEQ": 0.71,
+     "Interval": -2,
+     "Level": 0,
+     "Mix": 1,
+     "Tracking": 3
+    },
+    "block1": {
      "@enabled": true,
      "@favorite": 53,
      "@model": "HD2_Compressor3BandComp",
      "@no_snapshot_bypass": false,
      "@path": 0,
-     "@position": 0,
+     "@position": 1,
      "@stereo": false,
      "@type": 0,
      "Attack": 0.035,
@@ -45,13 +58,13 @@
      "Level": 8,
      "Lo Gain": 1.5,
      "Lo Thresh": -26.6,
-     "Lo X Freq": 400,
+     "Lo X Freq": 350,
      "Mid Gain": 0,
      "Mid Thresh": -49.1,
      "Ratio": 2,
      "Release": 0.2
     },
-    "block1": {
+    "block2": {
      "@bypassvolume": 1,
      "@enabled": true,
      "@model": "HD2_AmpSVT4Pro",
@@ -81,7 +94,7 @@
      "UltraHi": false,
      "UltraLo": false
     },
-    "block2": {
+    "block3": {
      "@cab": "cab0",
      "@enabled": true,
      "@model": "HD2_CabMicIr_1x12CaliEXTWithPan",
@@ -99,7 +112,7 @@
      "Pan": 0.5,
      "Position": 0.36
     },
-    "block3": {
+    "block4": {
      "@enabled": false,
      "@model": "HD2_FilterAutoFilter",
      "@no_snapshot_bypass": false,
@@ -175,16 +188,24 @@
      "@enabled": true,
      "@model": "HD2_AppDSPFlowSplitXOver",
      "@no_snapshot_bypass": false,
-     "@position": 1,
+     "@position": 2,
      "bypass": false,
-     "Frequency": 300,
+     "Frequency": 350,
      "Reverse": true
     }
    },
    "dsp1": {},
    "footswitch": {
     "dsp0": {
-     "block3": {
+     "block0": {
+      "@fs_enabled": false,
+      "@fs_index": 2,
+      "@fs_label": "Poly Capo",
+      "@fs_ledcolor": 196619,
+      "@fs_momentary": false,
+      "@fs_primary": true
+     },
+     "block4": {
       "@fs_customlabel": "AutoFilter",
       "@fs_enabled": false,
       "@fs_index": 1,
@@ -198,9 +219,9 @@
    "global": {
     "@current_snapshot": 0,
     "@cursor_dsp": 0,
-    "@cursor_group": "block3",
-    "@cursor_path": 1,
-    "@cursor_position": 5,
+    "@cursor_group": "block1",
+    "@cursor_path": 0,
+    "@cursor_position": 1,
     "@DtSelect": 2,
     "@guitarinputZ": 0,
     "@guitarpad": 0,
@@ -222,16 +243,17 @@
     "@valid": true,
     "blocks": {
      "dsp0": {
-      "block0": true,
+      "block0": false,
       "block1": true,
       "block2": true,
-      "block3": false,
+      "block3": true,
+      "block4": false,
       "split": true
      }
     },
     "controllers": {
      "dsp0": {
-      "block1": {
+      "block2": {
        "Bright": {
         "@fs_enabled": true,
         "@value": true
@@ -252,13 +274,14 @@
       "block0": true,
       "block1": true,
       "block2": true,
-      "block3": false,
+      "block3": true,
+      "block4": false,
       "split": true
      }
     },
     "controllers": {
      "dsp0": {
-      "block1": {
+      "block2": {
        "Bright": {
         "@fs_enabled": false,
         "@value": false
@@ -280,12 +303,13 @@
       "block1": true,
       "block2": true,
       "block3": true,
+      "block4": true,
       "split": true
      }
     },
     "controllers": {
      "dsp0": {
-      "block1": {
+      "block2": {
        "Bright": {
         "@fs_enabled": false,
         "@value": false
