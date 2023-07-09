@@ -6,10 +6,42 @@
    "application": "HX Edit",
    "appversion": 56623104,
    "build_sha": "v3.50-25-g9dead52",
-   "modifieddate": 1688893349,
+   "modifieddate": 1688895475,
    "name": "B:Growler"
   },
   "tone": {
+   "controller": {
+    "dsp0": {
+     "block2": {
+      "Blend": {
+       "@controller": 9,
+       "@max": 1,
+       "@min": 0,
+       "@snapshot_disable": false
+      }
+     },
+     "block3": {
+      "Bass": {
+       "@controller": 9,
+       "@max": 1,
+       "@min": 0,
+       "@snapshot_disable": false
+      },
+      "Drive": {
+       "@controller": 9,
+       "@max": 1,
+       "@min": 0,
+       "@snapshot_disable": false
+      },
+      "LowMid": {
+       "@controller": 9,
+       "@max": 1,
+       "@min": 0,
+       "@snapshot_disable": false
+      }
+     }
+    }
+   },
    "dsp0": {
     "block0": {
      "@enabled": false,
@@ -60,7 +92,7 @@
      "@path": 0,
      "@position": 5,
      "@type": 1,
-     "Bass": 0.5,
+     "Bass": 0.51,
      "Boost": 0.47,
      "ChVol": 0.88,
      "Contour": true,
@@ -191,9 +223,9 @@
    "global": {
     "@current_snapshot": 0,
     "@cursor_dsp": 0,
-    "@cursor_group": "block0",
+    "@cursor_group": "block2",
     "@cursor_path": 0,
-    "@cursor_position": 0,
+    "@cursor_position": 4,
     "@DtSelect": 2,
     "@guitarinputZ": 0,
     "@guitarpad": 0,
@@ -224,6 +256,30 @@
       "block6": true,
       "split": true
      }
+    },
+    "controllers": {
+     "dsp0": {
+      "block2": {
+       "Blend": {
+        "@fs_enabled": false,
+        "@value": 0.4
+       }
+      },
+      "block3": {
+       "Bass": {
+        "@fs_enabled": false,
+        "@value": 0.51
+       },
+       "Drive": {
+        "@fs_enabled": false,
+        "@value": 0.26
+       },
+       "LowMid": {
+        "@fs_enabled": false,
+        "@value": 0.15
+       }
+      }
+     }
     }
    },
    "snapshot1": {
@@ -235,7 +291,7 @@
     "@valid": true,
     "blocks": {
      "dsp0": {
-      "block0": true,
+      "block0": false,
       "block1": true,
       "block2": true,
       "block3": true,
@@ -243,6 +299,30 @@
       "block5": true,
       "block6": true,
       "split": true
+     }
+    },
+    "controllers": {
+     "dsp0": {
+      "block2": {
+       "Blend": {
+        "@fs_enabled": false,
+        "@value": 0.63
+       }
+      },
+      "block3": {
+       "Bass": {
+        "@fs_enabled": false,
+        "@value": 0.27
+       },
+       "Drive": {
+        "@fs_enabled": false,
+        "@value": 0.37
+       },
+       "LowMid": {
+        "@fs_enabled": false,
+        "@value": 0.27
+       }
+      }
      }
     }
    },
@@ -263,6 +343,30 @@
       "block5": true,
       "block6": true,
       "split": true
+     }
+    },
+    "controllers": {
+     "dsp0": {
+      "block2": {
+       "Blend": {
+        "@fs_enabled": false,
+        "@value": 0.4
+       }
+      },
+      "block3": {
+       "Bass": {
+        "@fs_enabled": false,
+        "@value": 0.51
+       },
+       "Drive": {
+        "@fs_enabled": false,
+        "@value": 0.26
+       },
+       "LowMid": {
+        "@fs_enabled": false,
+        "@value": 0.15
+       }
+      }
      }
     }
    },
