@@ -6,36 +6,38 @@
    "application": "HX Edit",
    "appversion": 56623104,
    "build_sha": "v3.50-25-g9dead52",
-   "modifieddate": 1688294343,
+   "modifieddate": 1688893349,
    "name": "B:Growler"
   },
   "tone": {
    "dsp0": {
     "block0": {
      "@enabled": false,
-     "@favorite": 1,
-     "@model": "L6SPB_PolyPitch",
+     "@favorite": 2,
+     "@model": "L6SPB_PolyDowntune",
      "@no_snapshot_bypass": false,
      "@path": 0,
      "@position": 0,
      "@type": 0,
      "AutoEQ": 0.7,
-     "Cents": 0,
      "Interval": -1,
      "Level": 0,
      "Mix": 1,
-     "ReturnCurve": 0,
-     "ReturnTime": 0,
-     "RiseFallSwitch": false,
-     "ShiftCurve": 0,
-     "ShiftTime": 0,
-     "SyncSelect1": 6,
-     "SyncSelect2": 6,
-     "TempoSync1": false,
-     "TempoSync2": false,
      "Tracking": 3
     },
     "block1": {
+     "@enabled": true,
+     "@model": "HD2_GateNoiseGate",
+     "@no_snapshot_bypass": false,
+     "@path": 0,
+     "@position": 2,
+     "@stereo": false,
+     "@type": 0,
+     "Decay": 0.5,
+     "Level": 0,
+     "Threshold": -48
+    },
+    "block2": {
      "@enabled": true,
      "@model": "HD2_DistZeroAmpBassDI",
      "@no_snapshot_bypass": false,
@@ -48,9 +50,9 @@
      "Drive": 0.81,
      "Level": 0.48,
      "Presence": 0.5,
-     "Treble": 0.59
+     "Treble": 0.6
     },
-    "block2": {
+    "block3": {
      "@bypassvolume": 1,
      "@enabled": true,
      "@model": "HD2_AmpGCougar800",
@@ -68,7 +70,7 @@
      "Master": 1,
      "Treble": 0.66
     },
-    "block3": {
+    "block4": {
      "@enabled": true,
      "@model": "HD2_CabMicIr_1x15AmpegB15",
      "@no_snapshot_bypass": false,
@@ -83,7 +85,7 @@
      "Mic": 10,
      "Position": 0.75
     },
-    "block4": {
+    "block5": {
      "@enabled": true,
      "@model": "HD2_CompressorRochesterComp",
      "@no_snapshot_bypass": false,
@@ -100,7 +102,7 @@
      "Release": 0.1,
      "Threshold": -24
     },
-    "block5": {
+    "block6": {
      "@enabled": true,
      "@model": "HD2_CompressorDeluxeComp",
      "@no_snapshot_bypass": false,
@@ -171,8 +173,16 @@
      "block0": {
       "@fs_enabled": false,
       "@fs_index": 1,
-      "@fs_label": "Poly Pitch",
+      "@fs_label": "Poly Capo",
       "@fs_ledcolor": 196619,
+      "@fs_momentary": false,
+      "@fs_primary": true
+     },
+     "block2": {
+      "@fs_enabled": true,
+      "@fs_index": 2,
+      "@fs_label": "ZeroAmp Bass DI",
+      "@fs_ledcolor": 13676288,
       "@fs_momentary": false,
       "@fs_primary": true
      }
@@ -181,9 +191,9 @@
    "global": {
     "@current_snapshot": 0,
     "@cursor_dsp": 0,
-    "@cursor_group": "block1",
+    "@cursor_group": "block0",
     "@cursor_path": 0,
-    "@cursor_position": 4,
+    "@cursor_position": 0,
     "@DtSelect": 2,
     "@guitarinputZ": 0,
     "@guitarpad": 0,
@@ -211,6 +221,7 @@
       "block3": true,
       "block4": true,
       "block5": true,
+      "block6": true,
       "split": true
      }
     }
@@ -230,6 +241,7 @@
       "block3": true,
       "block4": true,
       "block5": true,
+      "block6": true,
       "split": true
      }
     }
@@ -249,6 +261,7 @@
       "block3": true,
       "block4": true,
       "block5": true,
+      "block6": true,
       "split": true
      }
     }
